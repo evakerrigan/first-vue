@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import CharacterView from "../views/CharacterView.vue";
+import NotfoundView from "../views/NotfoundView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -10,12 +12,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/character/:id",
     name: "character",
-    component: () => import("../views/CharacterView.vue"),
+    component: CharacterView,
   },
   {
     path: "/:notfound",
     name: "notfound",
-    component: () => import("../views/NotfoundView.vue"),
+    component: NotfoundView,
   },
 ];
 
