@@ -13,7 +13,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/CharacterView.vue"),
   },
   {
-    path: "/notfound",
+    path: "/:notfound",
     name: "notfound",
     component: () => import("../views/NotfoundView.vue"),
   },
